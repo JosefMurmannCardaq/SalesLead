@@ -53,7 +53,7 @@
   <div class="form-container">
     <!-- to web to lead endpoint for Cardaq. The form will submit the lead information to Salesforce when the user clicks the submit button. -->
 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DJ9000000QOe7" method="POST">
- 
+ <input type=hidden name="oid" value="00DJ9000000QOe7">
 <input type=hidden name="retURL" value="https://josefmurmanncardaq.github.io/SalesLead/ThankYou">
  
 <!--  ----------------------------------------------------------------------  -->
@@ -78,7 +78,7 @@
  
 <label for="lead_owner">Salesperson</label>
 <!-- NOTE: Replace the option `value` strings with real Salesforce user IDs (15 or 18 chars). -->
-<select id="lead_owner" name="oid">
+<select id="lead_owner" name="owner_id">
   <option value="">-- Select Salesperson --</option>
   <option value="005dP00000KK4aFQAT">Alex Burland</option>
   <option value="005dP00000EBl0NQAT">Bal Matharu</option>
@@ -95,6 +95,7 @@
   </div>
 </body>
 </html>
+
 
 
 
