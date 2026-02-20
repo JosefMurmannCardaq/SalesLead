@@ -14,7 +14,7 @@
     .form-container {
       max-width: 480px;
       margin: 0 auto;
-      background: #ffffff;
+      background: #ebebeb;
       padding: 20px;
       border-radius: 6px;
     }
@@ -70,12 +70,25 @@
 <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
  
 <label for="title">Job Title</label><input  id="title" maxlength="40" name="title" size="20" type="text" /><br>
+
+<label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
  
 <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
  
 <label for="mobile">Mobile</label><input  id="mobile" maxlength="40" name="mobile" size="20" type="text" /><br>
  
-<label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+<label for="lead_owner">Salesperson</label>
+<!-- NOTE: Replace the option `value` strings with real Salesforce user IDs (15 or 18 chars). -->
+<select id="lead_owner" name="ownerid">
+  <option value="">-- Select Salesperson --</option>
+  <option value="005dP00000KK4aFQAT">Alex Burland</option>
+  <option value="005dP00000EBl0NQAT">Bal Matharu</option>
+  <option value="005dP00000E2OSsQAN">Deivs Juska</option>
+  <option value="005dP00000JYThPQAX">Reetu MacCullam</option>
+  <option value="005dP00000E045FQAR">Savelijs Gyzevs</option>
+  <option value="005dP00000ECJgLQAX">Josef Murmann</option>
+</select>
+<br>
  
 <input type="submit" name="submit">
  
